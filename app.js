@@ -1,45 +1,30 @@
 "use strict"
 
-/* Operadores Aritméticos */
+/* Operadores Racionales */
 
 var a = 10;
 var b = 20;
 
-/* Suma */
+/*MAYOR QUE: > */
+var mayorq = (a > b);
+console.log(a + " > " + b + ": " + mayorq);
 
-var suma = a + b;
-console.log("La suma de " + a + " + " + b + " es igual a: " + suma);
+/*MENOR QUE: < */
+var menorq = (a < b);
+console.log(a + " < " + b + ": " + menorq);
 
-/* Resta */
+/*MAYOR O IGUAL QUE: >= */
+var migualq = (a >= b);
+console.log(a + " >= " + b + ": " + migualq);
 
-var resta = a - b;
-console.log("La resta de " + a + " - " + b + " es igual a: " + resta);
+/*MENOR O IGUAL QUE: <= */
+var menigualq = (a <= b);
+console.log(a + " <= " + b + ": " + menigualq);
 
-/* Multiplicación */
+/*IGUAL QUE: == */
+var igualq = (a == b);
+console.log(a + " == " + b + ": " + igualq);
 
-var mult = a * b;
-console.log("La multiplicación de " + a + " x " + b + " es igual a: " + mult);
-
-/* División */
-
-var div = a / b;
-console.log("La división entre " + a + " / " + b + " es igual a: " + div);
-
-/* Modulo o Residuo */
-
-var mod = a % b;
-console.log("El módulo o residuo de " + a + " % " + b + " es igual a: " + mod);
-
-/* Incremento */
-
-var inc = a;
-inc++;
-console.log("El incremento de " + a + " es igual a: " + inc);
-
-/* Decremento */
-
-var der = a;
-der--;
-console.log("El decremento de " + a + " es igual a: " + der);
- 
-
+/*NO ES IGUAL QUE O ES DIFERENTE QUE: ! */
+var nonigualq = (a != b);
+console.log(a + " != " + b + ": " + nonigualq);
