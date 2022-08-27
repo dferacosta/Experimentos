@@ -1,41 +1,32 @@
 "use strict"
 
-/* OPERADORES DE ASIGNACION */
+/* OPERACIONES CON CONCATENACION */
 
 var a = 10;
+var b = 20;
 
-/* ASIGNACION SIMPLE */
+var nombre = "David";
+var apellidos = "Ferreira Acosta";
 
-var igual = a;
-console.log("El resultado de la asignación 'Simple' es: " + igual);
+/* CONCATENACION DE NUMEROS */
 
-/* SUMER Y ASIGNAR */
+var concnum = a + b
+console.log("La suma de " + a + " y " + b + " es igual a: " + concnum);
 
-var masigual = 10;
+/* CONCATENACION DE CADENAS DE TEXTO */
 
-masigual += a;
-//Es la abreviatura de "variable = variable + variable"
-console.log("El resultado de la asignación '+=' es: " + masigual);
+var conctext = (nombre + " " + apellidos);
+console.log("El Full Stack Developer del año es: " + conctext);
 
+/* CONCATENACION DE NUMEROS COMO TEXTO */
 
-/* RESTAR Y ASIGNAR */
-
-var menosigual = a;
-menosigual -= a;
-console.log("El resultado de la asignación '-=' es: " + menosigual);
+var cnumtxt = "19"+"96";
+console.log("El año de naciento de " + nombre + " " + apellidos + " es " + cnumtxt);
 
 
-/* MULTIPLICAR Y ASIGNAR */
+/* CONCATENACION DE TEXTO Y NUMERO */
 
-var porigual = a;
-porigual *= a;
-console.log("El resultado de la asignación '*=' es: " + porigual);
-
-/* DIVIDIR Y ASIGNAR */
-
-var entreigual = a;
-entreigual /= a;
-console.log("El resultado de la asignación '/=' es: " + entreigual);
-
+var ctextnumb = a + "b";
+console.log("La union de un valor numérico y texto se visualiza de la siguinte manera: " + ctextnumb);
 
 
