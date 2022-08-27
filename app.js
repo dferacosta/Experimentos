@@ -1,30 +1,25 @@
 "use strict"
 
-/* Operadores Racionales */
+/* OPERADORES LOGICOS */
 
 var a = 10;
 var b = 20;
 
-/*MAYOR QUE: > */
-var mayorq = (a > b);
-console.log(a + " > " + b + ": " + mayorq);
+/* OPERADOR "Y" O "AND": && */
 
-/*MENOR QUE: < */
-var menorq = (a < b);
-console.log(a + " < " + b + ": " + menorq);
+var and = (a > 9 && b > 10);
+console.log("El resultado de la evaluación 'AND' es: " + and);
+//Mientras ambas condiciones se cumplan el resultado sera "True"
 
-/*MAYOR O IGUAL QUE: >= */
-var migualq = (a >= b);
-console.log(a + " >= " + b + ": " + migualq);
+/* OPERADOR "O" U "OR" */
 
-/*MENOR O IGUAL QUE: <= */
-var menigualq = (a <= b);
-console.log(a + " <= " + b + ": " + menigualq);
+var or = (a > 10 || b > 10);
+console.log("El resultado de la evaluación 'OR' es: " + or);
+//Mientras una condición se cumpla el resultado sera "True"
 
-/*IGUAL QUE: == */
-var igualq = (a == b);
-console.log(a + " == " + b + ": " + igualq);
+/* OPERADOR DE "NEGACION" O "NOT" */
 
-/*NO ES IGUAL QUE O ES DIFERENTE QUE: ! */
-var nonigualq = (a != b);
-console.log(a + " != " + b + ": " + nonigualq);
+var not = !(a > 10);
+console.log("El resultado de la evaluación 'NOT' es: " + not);
+//Mientras la evaluación negada sea verdadera el resultado será "True"
+
