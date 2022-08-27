@@ -1,25 +1,41 @@
 "use strict"
 
-/* OPERADORES LOGICOS */
+/* OPERADORES DE ASIGNACION */
 
 var a = 10;
-var b = 20;
 
-/* OPERADOR "Y" O "AND": && */
+/* ASIGNACION SIMPLE */
 
-var and = (a > 9 && b > 10);
-console.log("El resultado de la evaluación 'AND' es: " + and);
-//Mientras ambas condiciones se cumplan el resultado sera "True"
+var igual = a;
+console.log("El resultado de la asignación 'Simple' es: " + igual);
 
-/* OPERADOR "O" U "OR" */
+/* SUMER Y ASIGNAR */
 
-var or = (a > 10 || b > 10);
-console.log("El resultado de la evaluación 'OR' es: " + or);
-//Mientras una condición se cumpla el resultado sera "True"
+var masigual = 10;
 
-/* OPERADOR DE "NEGACION" O "NOT" */
+masigual += a;
+//Es la abreviatura de "variable = variable + variable"
+console.log("El resultado de la asignación '+=' es: " + masigual);
 
-var not = !(a > 10);
-console.log("El resultado de la evaluación 'NOT' es: " + not);
-//Mientras la evaluación negada sea verdadera el resultado será "True"
+
+/* RESTAR Y ASIGNAR */
+
+var menosigual = a;
+menosigual -= a;
+console.log("El resultado de la asignación '-=' es: " + menosigual);
+
+
+/* MULTIPLICAR Y ASIGNAR */
+
+var porigual = a;
+porigual *= a;
+console.log("El resultado de la asignación '*=' es: " + porigual);
+
+/* DIVIDIR Y ASIGNAR */
+
+var entreigual = a;
+entreigual /= a;
+console.log("El resultado de la asignación '/=' es: " + entreigual);
+
+
 
