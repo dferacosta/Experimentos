@@ -1,10 +1,17 @@
 "use strict"
 
-/* OPERADOR TERNARIO O CONDICIONAL */
+/* OPERADOR DE TIPO DE TEXTO */
 
-var a = 110;
-var b = 20;
+var datos = 10; //Número
+var nombre = "Playa"; //Cadena de texto o String
+var activo = true; //Boolean    
+var persona = {
+    edad: 34, //Número
+    deporte: "Correr", //Cadena de texto o String
+}//Objeto
 
-/* CONDICION "?" TRUE : FALSE */
-var resultado = (a > b ? "Si, es mayor." : "No, no es mayor.");
-console.log("El resultado con el operador ternario u operador condicional es: " + resultado);
+console.log(typeof datos);
+console.log(typeof nombre);
+console.log(typeof activo);
+console.log(typeof persona);
+
