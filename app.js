@@ -1,21 +1,10 @@
 "use strict"
 
-// CONTROLAR LOS CICLOS
-// BREAK | CONTINUE
+/*ESTRUCTURA BASICA DE UNA FUNCION*/
 
-
-var contador = 0;
-var cuenta = 0;
-
-for (contador =0; contador <= 20; contador++){
-    if (contador == 5){
-    break;
-    }
-    if (contador % 2 == 0){
-        continue;
-    }
-    cuenta++;
-    debugger;
+function saludar(){
+    var saludo = "Hola mundo";
+    console.log(saludo);
 }
 
-console.log("Hay " + cuenta + " números impares");
+saludar();
