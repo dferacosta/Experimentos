@@ -1,13 +1,21 @@
 "use strict"
 
-// CICLO WHILE | CICLO INDEFINIDO
-// ITERACION INDETERMINADA O DESCON
+// CONTROLAR LOS CICLOS
+// BREAK | CONTINUE
 
 
-var productos = 5;
+var contador = 0;
+var cuenta = 0;
 
-while (productos > 0) {
-    console.log("Producto vendido");
-    productos--;
+for (contador =0; contador <= 20; contador++){
+    if (contador == 5){
+    break;
+    }
+    if (contador % 2 == 0){
+        continue;
+    }
+    cuenta++;
     debugger;
 }
+
+console.log("Hay " + cuenta + " números impares");
