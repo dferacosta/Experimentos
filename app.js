@@ -1,11 +1,13 @@
 "use strict"
 
-// CICLO FOR | CICLO DEFINIDO
-// REPETICION = ITERACION
+// CICLO WHILE | CICLO INDEFINIDO
+// ITERACION INDETERMINADA O DESCON
 
 
 var productos = 5;
 
-for (let contador = 0; contador < productos; contador++){
-    console.log("Producto #" + contador);
+while (productos > 0) {
+    console.log("Producto vendido");
+    productos--;
+    debugger;
 }
