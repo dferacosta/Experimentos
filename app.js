@@ -1,16 +1,19 @@
 "use strict"
-/* FUNCION ANÓNIMA */
+/* CALLBACKS */
 
-/*(
-    function(){
-        var mensaje = "Hola, de nuevo";
-        console.log(mensaje);
-    }
-)()*/
-//Me permite aislar una función
+function calcular(datoA, datoB, datoCB1, datoCB2){
+    var suma = datoA + datoB;
+    var resta = datoA - datoB;
 
-var saludar = function(nombre){
-    var mensaje = "Hola, " + nombre;
-    return mensaje;
+    datoCB1(suma);
+    datoCB2(resta);    
 }
-//Función anónima.
+
+calcular(
+        2, 
+        3,
+        function (resultado){console.log("Suma", resultado)}, 
+        //El valor de "resultado" proviene de datoCB1, en este caso es la "Suma".
+        function (resultado){console.log("Resta", resultado)}
+        //El valor de "resultado" proviene de datoCB2, en este caso es la "Resta".
+        )
