@@ -1,14 +1,16 @@
 "use strict"
+/* FUNCION ANÓNIMA */
 
-/*PARAMETRO SPEAD */
+/*(
+    function(){
+        var mensaje = "Hola, de nuevo";
+        console.log(mensaje);
+    }
+)()*/
+//Me permite aislar una función
 
-function cocinar(ingr1, ingr2, ingr3, ...otros){
-    console.log("Ingrediente 1: " + ingr1);
-    console.log("Ingrediente 2: " + ingr2);
-    console.log("Ingrediente 3: " + ingr3);
-    console.log("Otros ingredientes: " + otros)
+var saludar = function(nombre){
+    var mensaje = "Hola, " + nombre;
+    return mensaje;
 }
-
-var ingredientesbase = ["Pollo", "Tomate"]; //Spread
-
-cocinar(...ingredientesbase, "Arroz", "Pescado", "Vegetales");
+//Función anónima.
