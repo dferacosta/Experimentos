@@ -1,19 +1,27 @@
 "use strict"
-/* CALLBACKS */
+/* FUNCIONES ARROW | FAT ARROW |  LAMBDA FUNCTIONS */
 
-function calcular(datoA, datoB, datoCB1, datoCB2){
-    var suma = datoA + datoB;
-    var resta = datoA - datoB;
+//PRIMER EJEMPLO
+var saludar = nombre => "Hola, " + nombre;
+console.log(saludar("David."));
 
-    datoCB1(suma);
-    datoCB2(resta);    
+//SEGUNDO EJEMPLO
+var sumar = cantidad => cantidad + 10;
+console.log(sumar(10));
+
+//TERCER EJEMPLO
+var calcular = (datoA, datoB) => datoA + datoB
+console.log(calcular(25,75));
+
+//CUARTO EJEMPLO
+var generar = (datoA, datoB) => {
+    var datoC = 45;
+    return (datoA + datoB + datoC);
 }
+console.log(generar((25*5),75));
 
-calcular(
-        2, 
-        3,
-        function (resultado){console.log("Suma", resultado)}, 
-        //El valor de "resultado" proviene de datoCB1, en este caso es la "Suma".
-        function (resultado){console.log("Resta", resultado)}
-        //El valor de "resultado" proviene de datoCB2, en este caso es la "Resta".
-        )
+//QUINTO EJEMPLO
+var validar = () => {
+    return "Validación correcta";
+}
+console.log(validar());
