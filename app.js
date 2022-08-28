@@ -1,17 +1,13 @@
 "use strict"
 
-/* OPERADOR DE TIPO DE TEXTO */
+/* CONDICION IF */
 
-var datos = 10; //Número
-var nombre = "Playa"; //Cadena de texto o String
-var activo = true; //Boolean    
-var persona = {
-    edad: 34, //Número
-    deporte: "Correr", //Cadena de texto o String
-}//Objeto
+var a = 10;
+var b = 20;
+var resultado = "Sin datos";
 
-console.log(typeof datos);
-console.log(typeof nombre);
-console.log(typeof activo);
-console.log(typeof persona);
+if ( a > b);{
+    resultado = "La condición se cumplió";
+}
 
+console.log("Cuál es el resultado final de IF? " + resultado);
