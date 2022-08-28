@@ -1,12 +1,14 @@
 "use strict"
 
-/*PARAMETRO REST (...) */
+/*PARAMETRO SPEAD */
 
-function cocinar(ingr1, ingr2, ingr3, ...masingr){
+function cocinar(ingr1, ingr2, ingr3, ...otros){
     console.log("Ingrediente 1: " + ingr1);
     console.log("Ingrediente 2: " + ingr2);
     console.log("Ingrediente 3: " + ingr3);
-    console.log("Otros ingredientes: " + masingr);
+    console.log("Otros ingredientes: " + otros)
 }
 
-cocinar("Arroz", "Carne", "Vegetales", " Platanos", " Verduras", "  Frutas");
+var ingredientesbase = ["Pollo", "Tomate"]; //Spread
+
+cocinar(...ingredientesbase, "Arroz", "Pescado", "Vegetales");
