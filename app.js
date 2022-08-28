@@ -1,10 +1,14 @@
 "use strict"
 
-/*ESTRUCTURA BASICA DE UNA FUNCION*/
+/*PARAMETROS DE UNA FUNCION*/
 
-function saludar(){
-    var saludo = "Hola mundo";
-    console.log(saludo);
+function saludar(nombre, edad){
+    console.log("Soy " + nombre);
+    console.log("Tengo " + edad + " de edad.");
+    var resultado = nombre + " tiene " + edad + " años.";
+    return resultado;
 }
 
-saludar();
+var mensaje = saludar("David", 26);
+
+console.log(mensaje);
