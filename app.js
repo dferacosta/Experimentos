@@ -1,17 +1,20 @@
 "use strict"
 
-/* EVENTOS MULTIMEDIA */
+/* TEMPORIZADORE O TIMERS */
 
-const video = document.querySelector(".bostonVideo");
+/* var temporizador = setInterval(function (){
+    setColor();
+}, 500); */
 
-video.addEventListener("play", function(){
-    console.log("El video ha iniciado."); 
-})
+setTimeout(function (){
+    setColor();    
+}, 1000);
 
-video.addEventListener("", function(){
-    console.log("Se está buscando el video.");
-})
+function setColor (){
+    var pagina = document.body;
+    pagina.style.backgroundColor = pagina.style.backgroundColor == "blue" ? "green" : "blue"
+}
 
-video.addEventListener("", function(){
-    console.log("El video ha terminado");
-})
+function stopChangeColor (){
+    clearInterval(temporizador);
+}
