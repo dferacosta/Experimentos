@@ -1,8 +1,17 @@
 "use strict"
 
+/* EVENTOS DEL MOUSE */
+
 const boton = document.querySelector(".boton");
 
-boton.addEventListener("click", () => {
-    console.log(this)
-    this.location = "https://www.google.com";
+boton.addEventListener("click", function(){
+    console.log("El botón se ha pulsado");
+})
+
+boton.addEventListener("mouseover", function(){
+    console.log("El mouse está sobre el botón");
+})
+
+boton.addEventListener("mouseout", function(){
+    console.log("El mouse esta fuera del botón");    
 })
