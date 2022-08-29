@@ -1,20 +1,13 @@
 "use strict"
 
-/* TEMPORIZADORE O TIMERS */
+/* PROPIEDADES NUMERICAS */
 
-/* var temporizador = setInterval(function (){
-    setColor();
-}, 500); */
+console.log("MAX_VALUE: ", Number.MAX_VALUE);
 
-setTimeout(function (){
-    setColor();    
-}, 1000);
+console.log("MIN_VALUE: ", Number.MIN_VALUE);
 
-function setColor (){
-    var pagina = document.body;
-    pagina.style.backgroundColor = pagina.style.backgroundColor == "blue" ? "green" : "blue"
-}
+console.log("NEGATIVE_INFINITY: ", Number.NEGATIVE_INFINITY);
 
-function stopChangeColor (){
-    clearInterval(temporizador);
-}
+console.log("POSITIVE_INFINITY: ", Number.POSITIVE_INFINITY);
+
+console.log("NaN: ", Number.NaN);
