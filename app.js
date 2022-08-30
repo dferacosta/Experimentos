@@ -1,37 +1,26 @@
 "use strict"
 
-/* METODOS DE GENERACION, REEMPLAZO, Y SEPARACION */
-//Estos métodos son sensibles a mayúsculas y minúsculas.
+/* METODOS DE TANSFORMACION */
 
-var mensaje = "Estoy aprendiendo Javascript";
-
+var msg1 = "Estoy aprendiendo Javascript";
+var msg2 = " y programación"
+var total = 123456;
 var resultado;
 
-//REPEAT
-resultado = mensaje.repeat(1);
-console.log(resultado);
-console.log(" ");
 
-//REPLACE
-resultado = mensaje.replace("Javascript", "a programar");
-console.log(resultado);
-console.log(" ");
+//resultado = total.toString();
+//console.log(resultado);
+//Convierte a texto un valor numérico.
 
-//SLICE
-resultado = mensaje.slice(6);
+resultado = msg1.toLowerCase();
 console.log(resultado);
-console.log(" ");
+//Reescribe el texto en minúsculas. 
 
-//SPLIT
-resultado = mensaje.split(" ");
+resultado = msg1.toUpperCase();
 console.log(resultado);
-console.log(" ");
+//Reescribe el texto en mayúsculas.
 
-/*
-//TRIM
-resultado = mensaje.trim();
-//Elimina los espacios en blanco, antes y después, de una cadena de texto o string. 
+resultado = msg1.concat(msg2);
 console.log(resultado);
-console.log(" "); */
-
+//Concatena cadenas de texto.
 
