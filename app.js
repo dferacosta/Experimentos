@@ -1,6 +1,6 @@
 "use strict"
 
-/* METODOS DE BUSQUEDA | PART 1*/
+/* METODOS DE BUSQUEDA | PART 2*/
 
 var mensaje = "Estoy aprendiendo JavaScript y estoy aprendiendo mucho";
 
@@ -9,30 +9,33 @@ var resultado = "";
 console.log("🔸" + "Palabra buscada: 'Aprendiendo" + " , oración: " + mensaje);
 console.log(" ");
 
-//indexOf
-console.log("indexOf")
-resultado = "La palabra buscada ocupa el puesto no. " + mensaje.indexOf("aprendiendo");
+//match
+console.log("match")
+resultado = "El resultado del uso de match es: " + mensaje.match(/aprendiendo/gi);
+//Al agregar una "g", luego de la segunda diagonal (/), este mostrará todas las coincidencias dentro del texto. 
+//Al agregarle el operador "i", no distinguira entre mayúsculas y minúsculas. 
 console.log(resultado);
 console.log(" ");
 
-//lastIndexOf
-console.log("lastIndexOf")
-resultado = "La palabra buscada ocupa el puesto no. " + mensaje.lastIndexOf('aprendiendo');
+//substr
+console.log("substr")
+resultado = "El resultado del uso de substr es: " + mensaje.substr(6,11);
+//Busca la posición de la palabra y extrae la cantidad de caracteres indicado por el desarrllador
 console.log(resultado);
 console.log(" ");
 
-//search:
-console.log("search");
-resultado = "La palabra buscada ocupa el puesto no. " + mensaje.search('aprendiendo');
+//substring
+console.log("substring");
+resultado = "El resultado del uso de substr es: " + mensaje.substring(6,17);
 console.log(resultado);
 console.log(" ");
 
 
-//search | Exresion regular
-console.log("search: 'i'");
-resultado = "La palabra buscada ocupa el puesto no. " + mensaje.search(/ja/i);
-//i: "In case Sensitive". Cuando el resultado es igual a -1 quiere decir que no enctró una coincidencia.    
+//charAt
+console.log("charAt");
+resultado = "El resultado del uso de substr es: " + mensaje.charAt(3);  
+//Cuenta desd el numero cero (0), siendo la primera letra la que ocupe tal posición dentro de una cadena de texto o "string".
 console.log(resultado);
 console.log(" ");
- 
+
 
