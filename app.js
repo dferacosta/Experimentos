@@ -1,41 +1,23 @@
 "use strict"
 
-/* METODOS DE BUSQUEDA | PART 2*/
+/* METODOS DE BUSQUEDA | PART 3*/
+//Estos métodos son sensibles a mayúsculas y minúsculas.
 
-var mensaje = "Estoy aprendiendo JavaScript y estoy aprendiendo mucho";
+var mensaje = "Estoy aprendiendo Javascript";
 
 var resultado = "";
 
-console.log("🔸" + "Palabra buscada: 'Aprendiendo" + " , oración: " + mensaje);
-console.log(" ");
 
-//match
-console.log("match")
-resultado = "El resultado del uso de match es: " + mensaje.match(/aprendiendo/gi);
-//Al agregar una "g", luego de la segunda diagonal (/), este mostrará todas las coincidencias dentro del texto. 
-//Al agregarle el operador "i", no distinguira entre mayúsculas y minúsculas. 
+//startsWith
+var textsearch = mensaje.indexOf("Javascript");
+resultado = mensaje.startsWith("Ja", textsearch);
 console.log(resultado);
-console.log(" ");
 
-//substr
-console.log("substr")
-resultado = "El resultado del uso de substr es: " + mensaje.substr(6,11);
-//Busca la posición de la palabra y extrae la cantidad de caracteres indicado por el desarrllador
+//endsWith
+resultado = mensaje.endsWith("Javascript");
 console.log(resultado);
-console.log(" ");
 
-//substring
-console.log("substring");
-resultado = "El resultado del uso de substr es: " + mensaje.substring(6,17);
+//includes
+resultado = mensaje.includes("Estoy", 0);
+//La variable, luego del texto a buscar, determina el punto de partida del operador "includes".
 console.log(resultado);
-console.log(" ");
-
-
-//charAt
-console.log("charAt");
-resultado = "El resultado del uso de substr es: " + mensaje.charAt(3);  
-//Cuenta desd el numero cero (0), siendo la primera letra la que ocupe tal posición dentro de una cadena de texto o "string".
-console.log(resultado);
-console.log(" ");
-
-
