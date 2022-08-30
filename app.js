@@ -34,5 +34,5 @@ resultado = "La palabra buscada ocupa el puesto no. " + mensaje.search(/ja/i);
 //i: "In case Sensitive". Cuando el resultado es igual a -1 quiere decir que no enctró una coincidencia.    
 console.log(resultado);
 console.log(" ");
-
+ 
 
