@@ -1,23 +1,37 @@
 "use strict"
 
-/* METODOS DE BUSQUEDA | PART 3*/
+/* METODOS DE GENERACION, REEMPLAZO, Y SEPARACION */
 //Estos métodos son sensibles a mayúsculas y minúsculas.
 
 var mensaje = "Estoy aprendiendo Javascript";
 
-var resultado = "";
+var resultado;
 
-
-//startsWith
-var textsearch = mensaje.indexOf("Javascript");
-resultado = mensaje.startsWith("Ja", textsearch);
+//REPEAT
+resultado = mensaje.repeat(1);
 console.log(resultado);
+console.log(" ");
 
-//endsWith
-resultado = mensaje.endsWith("Javascript");
+//REPLACE
+resultado = mensaje.replace("Javascript", "a programar");
 console.log(resultado);
+console.log(" ");
 
-//includes
-resultado = mensaje.includes("Estoy", 0);
-//La variable, luego del texto a buscar, determina el punto de partida del operador "includes".
+//SLICE
+resultado = mensaje.slice(6);
 console.log(resultado);
+console.log(" ");
+
+//SPLIT
+resultado = mensaje.split(" ");
+console.log(resultado);
+console.log(" ");
+
+/*
+//TRIM
+resultado = mensaje.trim();
+//Elimina los espacios en blanco, antes y después, de una cadena de texto o string. 
+console.log(resultado);
+console.log(" "); */
+
+
