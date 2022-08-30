@@ -1,26 +1,17 @@
 "use strict"
 
-/* METODOS DE TANSFORMACION */
+/* PLANTILLAS Y LITERALES */
 
-var msg1 = "Estoy aprendiendo Javascript";
-var msg2 = " y programación"
-var total = 123456;
-var resultado;
+var lang1 = "Javascript";
+var lang2 = "HTML";
+var msg1 = `Me gusta ${lang1} y su integración con ${lang2}`;
 
+var msgmedia = `
+    Hola mundo, 
+    estoy aprendiendo
+    ${lang1} y me gusta
+    como se integra con ${lang2} y CSS`
 
-//resultado = total.toString();
-//console.log(resultado);
-//Convierte a texto un valor numérico.
+console.log(msgmedia);
 
-resultado = msg1.toLowerCase();
-console.log(resultado);
-//Reescribe el texto en minúsculas. 
-
-resultado = msg1.toUpperCase();
-console.log(resultado);
-//Reescribe el texto en mayúsculas.
-
-resultado = msg1.concat(msg2);
-console.log(resultado);
-//Concatena cadenas de texto.
 
