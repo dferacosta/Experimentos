@@ -1,8 +1,10 @@
 "use strict"
 
-/* CADENAS DE TEXTO */
+/* MEDIR CADENAS DE TEXTO */
 
-var pais = "Dominican Republic";
-var year = 2022;
-var comida = new String("Tomate");
+var mensaje = 'Estoy aprendiendo JavaScript';
+//Los espacios tambien son contados como digitos dentro de una cadena de texto.
+
+console.log('La cadena de texto tiene: ' + mensaje.length + ' letras');
+
 
