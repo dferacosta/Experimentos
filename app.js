@@ -1,17 +1,8 @@
 "use strict"
+/* ARREGLOS | ARRAYS */
 
-/* PLANTILLAS Y LITERALES */
+var platillos = ["ceviche", "tacos", "pasta"];
 
-var lang1 = "Javascript";
-var lang2 = "HTML";
-var msg1 = `Me gusta ${lang1} y su integración con ${lang2}`;
+var bebidas = new Array ("Jamainca", "Chicha morada", "Pozol");
 
-var msgmedia = `
-    Hola mundo, 
-    estoy aprendiendo
-    ${lang1} y me gusta
-    como se integra con ${lang2} y CSS`
-
-console.log(msgmedia);
-
-
+console.log(Array.isArray(platillos, bebidas));
