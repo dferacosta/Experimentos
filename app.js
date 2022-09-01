@@ -1,8 +1,10 @@
 "use strict"
-/* ARREGLOS | ARRAYS */
+/* MEDIR Y ACCEDER A UN ARREGLO */
 
-var platillos = ["ceviche", "tacos", "pasta"];
+var platillos = ["ceviche", "tacos", "pasta", "tostadas"];  
 
-var bebidas = new Array ("Jamainca", "Chicha morada", "Pozol");
+console.log("Hay " + platillos.length + " platillos en el menú");
 
-console.log(Array.isArray(platillos, bebidas));
+var platillo = platillos[platillos.length -1];
+
+console.log("El platillo seleccionado es: " + platillo);
