@@ -1,10 +1,28 @@
 "use strict"
-/* MEDIR Y ACCEDER A UN ARREGLO */
+/* OPERACIONES BASICAS DE UN ARREGLO */
 
 var platillos = ["ceviche", "tacos", "pasta", "tostadas"];  
-var paises = ["El Salvador", "República Dominicana", "Rusia", "Japón", "China", "Estados Unidos"];
+/*
+console.log("Antes: ", platillos);
+platillos.push("Queso");
 
-var menu = [platillos, paises];
+- Sirve para agregar elementos a nuestro arreglo o "Array" (["arrreglo", "arreglo"]).
 
-console.log(menu [1][0]);
-//El primer par de corchetes hace referencia al primer "arreglo", y así sucesivamente. 
+console.log("Despues: ", platillos )
+*/
+
+/*
+platillos.pop();
+
+- Sirve para eliminar elementos en nuestro arreglo o "Array".
+
+console.log(platillos);
+*/
+
+/*
+var mensaje = platillos.join();
+console.log(mensaje);
+
+- Sirve para mostrar como texto un arreglo.
+
+*/
