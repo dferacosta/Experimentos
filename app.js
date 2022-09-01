@@ -1,28 +1,25 @@
 "use strict"
-/* OPERACIONES BASICAS DE UN ARREGLO */
+/* GENERACION DE ARREGLOS CON "SPLIT", "FROM", Y "OF" */
 
-var platillos = ["ceviche", "tacos", "pasta", "tostadas"];  
-/*
-console.log("Antes: ", platillos);
-platillos.push("Queso");
-
-- Sirve para agregar elementos a nuestro arreglo o "Array" (["arrreglo", "arreglo"]).
-
-console.log("Despues: ", platillos )
-*/
-
-/*
-platillos.pop();
-
-- Sirve para eliminar elementos en nuestro arreglo o "Array".
+/* SPLIT */
+console.log("GENERACION DE ARREGLOS CON 'SPLIT'");
+var mensaje = "ceviche, tacos, pasta";
+var platillos = mensaje.split(",");
 
 console.log(platillos);
-*/
+console.log(" ");
 
-/*
-var mensaje = platillos.join();
-console.log(mensaje);
+/* FROM */
+console.log("GENERACION DE ARREGLOS CON 'FROM'");
+var plat1 = Array.from(document.querySelectorAll(".platillos p"));
+var plat2 = plat1.map(platillo => platillo.textContent);
+                                    
+console.log(plat2);
+console.log(" ");
 
-- Sirve para mostrar como texto un arreglo.
+/* OF */
+console.log("GENERACION DE ARREGLOS CON 'OF'");
+var plat3 = Array.of("Ceviche", "Tacos", "Pasta");
 
-*/
+console.log(plat3);
+console.log(" ");
