@@ -2,9 +2,9 @@
 /* MEDIR Y ACCEDER A UN ARREGLO */
 
 var platillos = ["ceviche", "tacos", "pasta", "tostadas"];  
+var paises = ["El Salvador", "República Dominicana", "Rusia", "Japón", "China", "Estados Unidos"];
 
-console.log("Hay " + platillos.length + " platillos en el menú");
+var menu = [platillos, paises];
 
-var platillo = platillos[platillos.length -1];
-
-console.log("El platillo seleccionado es: " + platillo);
+console.log(menu [1][0]);
+//El primer par de corchetes hace referencia al primer "arreglo", y así sucesivamente. 
