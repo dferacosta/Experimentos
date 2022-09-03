@@ -1,14 +1,9 @@
 "use strict"
 
-/* ORDENANDO ARREGLOS */
+/* ITERANDO CON ARREGLOS "FOR...IN" */
 
 var platillos = ["Ceviche", "Tacos", "Pasta"];
-console.log("Antes: ", platillos);
 
-
-
-platillos.sort();
-console.log("Después: ", platillos);
-
-platillos.reverse();
-console.log("Uso de 'Reverse': ", platillos);
+for (let i in platillos) {
+    console.log(platillos [i]);
+}
