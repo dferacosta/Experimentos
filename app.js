@@ -1,24 +1,26 @@
 "use strict"
 
-/* BUSQUEDA DE INDICE DE ELEMENTOS */
+/* FILTRAR ARREGLOS */
 
 //var items = ["Burritos", "Tacos", "Pasta"]
 
 var menu = 
 [
-    {nombre: "Burritos",
+   {nombre: "Burritos",
     precio: 20,
     pais: "El Salvador"},
 
-    {nombre: "Tacos",
+   {nombre: "Tacos",
     precio: 15,
     pais: "Mexico"},
 
-    {nombre: "Pasta",
+   {nombre: "Pasta",
     precio: 25,
     pais: "Italia"}
 ];
 
-var iorder = menu.findIndex(item => item.nombre == "Burritos");
+var resultado = null;
 
-console.log("Platillo no.: " + iorder);
+resultado = menu.filter(platillo => platillo.pais == "El Salvador");
+
+console.log(resultado);
